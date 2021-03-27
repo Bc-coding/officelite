@@ -1,13 +1,167 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* colors */
+  --clr-darkblue: hsl(228, 100%, 66%);
+  --clr-darkblue-hover: hsl(228, 100%, 70%);
+  --clr-lightblue: hsl(228, 100%, 75%);
+  --clr-lightblue-hover: hsl(228, 100%, 71%);
+  --clr-gray-1: hsl(227, 13%, 52%);
+  --clr-gray-2: hsl(228, 22%, 26%);
+  --clr-black: hsl(229, 22%, 19%);
+  --clr-red: hsl(0, 83%, 65%);
+  --clr-white: #fff;
+
+  --clr-bg: #f2f2f2;
+
+  /* fonts */
+  --ff-Kumbh-Sans: "Kumbh Sans", sans-serif;
+
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
+  font-family: var(--ff-Kumbh-Sans);
+  background: var(--clr-bg);
+  color: var(--clr-gray-1);
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  letter-spacing: var(--spacing);
+
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+}
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-gray-2);
+}
+
+.body1 {
+  font-family: var(--ff-Kumbh-Sans);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.body2 {
+  font-family: var(--ff-Kumbh-Sans);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--clr-gray-2);
+}
+
+button,
+input,
+textarea {
+  appearance: none;
+  border: none;
+  background: 0 0;
+  resize: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.btn {
+  width: 171px;
+  height: 56px;
+  border-radius: 50px;
+  font-size: 14px;
+
+  padding: 15px 30px;
+}
+
+.button1 {
+  background-color: var(--clr-darkblue);
+  color: var(--clr-white);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button1:hover {
+  background-color: var(--clr-darkblue-hover);
+  color: var(--clr-white);
+}
+
+.button2 {
+  background-color: var(--clr-lightblue);
+  color: var(--clr-darkblue);
+}
+
+.button2:hover {
+  background-color: var(--clr-lightblue-hover);
+  color: var(--clr-darkblue);
+}
+
+.button3 {
+  background-color: var(--clr-white);
+  color: var(--clr-darkblue);
+}
+
+.button3:hover {
+  background-color: var(--clr-white);
+  color: var(--clr-lightblue);
 }
