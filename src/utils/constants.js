@@ -1,0 +1,32 @@
+export const plans = [
+  {
+    name: "Basic",
+    price: "Free",
+    type: "Up to 5 users for free",
+    info1: "Basic document collaboration",
+    info2: "2 GB storage",
+    info3: "Great security and support",
+    id: 1,
+    style: false,
+  },
+  {
+    name: "Pro",
+    price: "$9.99",
+    type: "Per user, billed monthly",
+    info1: "All essential integrationsn",
+    info2: "50 GB storage",
+    info3: "More control and insights",
+    id: 2,
+    style: true,
+  },
+  {
+    name: "Ultimate",
+    price: "$19.99",
+    type: "Per user, billed monthly",
+    info1: "Robust work management",
+    info2: "100 GB storage",
+    info3: "VIP support",
+    id: 3,
+    style: false,
+  },
+];

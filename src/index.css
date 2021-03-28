@@ -6,10 +6,9 @@ Variables
 
 :root {
   /* colors */
-  --clr-darkblue: hsl(228, 100%, 66%);
-  --clr-darkblue-hover: hsl(228, 100%, 70%);
-  --clr-lightblue: hsl(228, 100%, 75%);
-  --clr-lightblue-hover: hsl(228, 100%, 71%);
+  --clr-darkblue: #5175ff;
+  --clr-lightblue: #829cff;
+
   --clr-gray-1: hsl(227, 13%, 52%);
   --clr-gray-2: hsl(228, 22%, 26%);
   --clr-black: hsl(229, 22%, 19%);
@@ -17,6 +16,9 @@ Variables
   --clr-white: #fff;
 
   --clr-bg: #f2f2f2;
+
+  --clr-text-light: #747b95;
+  --clr-text-dark: #333950;
 
   /* fonts */
   --ff-Kumbh-Sans: "Kumbh Sans", sans-serif;
@@ -97,6 +99,7 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
+  color: var(--clr-text-light);
 }
 
 ul {
@@ -128,32 +131,32 @@ textarea {
 .btn {
   width: 171px;
   height: 56px;
-  border-radius: 50px;
-  font-size: 14px;
+  border-radius: 28px;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 700;
+  padding: 14px 41px;
 
-  padding: 15px 30px;
+  margin-top: 32px;
 }
 
 .button1 {
   background-color: var(--clr-darkblue);
   color: var(--clr-white);
+  font-weight: 500;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .button1:hover {
-  background-color: var(--clr-darkblue-hover);
+  background-color: var(--clr-lightblue);
   color: var(--clr-white);
 }
 
 .button2 {
-  background-color: var(--clr-lightblue);
-  color: var(--clr-darkblue);
-}
-
-.button2:hover {
-  background-color: var(--clr-lightblue-hover);
-  color: var(--clr-darkblue);
+  background: rgba(130, 156, 255, 0.25);
+  mix-blend-mode: normal;
+  color: #5175ff;
 }
 
 .button3 {

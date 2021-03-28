@@ -15,8 +15,6 @@ function Home() {
 
 const Wrapper = styled.div`
   margin: 0 24px;
-
-  border: 1px solid red;
 `;
 
 export default Home;
