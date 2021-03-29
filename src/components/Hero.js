@@ -25,9 +25,9 @@ const Hero = () => {
             projects. Officelite is the new collaboration platform built with an
             intuitive interface to improve productivity.
           </p>
-          <a href="#" className="btn button1">
+          <button href="#" className="btn button1">
             Get Started
-          </a>
+          </button>
         </article>
       </div>
     </Wrapper>
