@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import "../index.css";
 
+import pricingPattern from "../assets/home/bg-pattern-pricing.svg";
+
 const Plan = props => {
   const { name, price, type, info1, info2, info3, style } = props;
 
@@ -40,6 +42,12 @@ const Wrapper = styled.article`
   height: 508px;
   text-align: center;
   background: ${props => (props.primary ? "#5175ff" : "white")};
+  /* background-image: url(${pricingPattern}); */
+  background-image: url(${props => (props.primary ? pricingPattern : "")});
+  background-size: 250%;
+  background-position: 50% 110%;
+  background-repeat: no-repeat;
+
   color: ${props => (props.primary ? "white" : "#747b95")};
   border-radius: 13px;
   box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.25);
@@ -62,7 +70,7 @@ const Wrapper = styled.article`
     line-height: 64px;
     margin-top: 40px;
     margin-bottom: 8px;
-    color: ${props => (props.primary ? "white" : "#747b95")};
+    color: ${props => (props.primary ? "white" : "#333950")};
   }
 
   .type {
@@ -79,6 +87,7 @@ const Wrapper = styled.article`
 
   .text-white {
     color: ${props => (props.primary ? "white" : "#747b95")};
+    opacity: 0.75;
   }
 `;
 
