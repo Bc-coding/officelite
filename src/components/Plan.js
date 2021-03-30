@@ -37,7 +37,7 @@ const Plan = props => {
   );
 };
 
-const Wrapper = styled.article`
+const Wrapper = styled.section`
   width: 327px;
   height: 508px;
   text-align: center;

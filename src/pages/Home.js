@@ -1,5 +1,5 @@
 import React from "react";
-import { Hero, PricingPlans } from "../components";
+import { Hero, PricingPlans, CountdownHome } from "../components";
 import styled from "styled-components";
 
 function Home() {
@@ -8,14 +8,18 @@ function Home() {
       <main>
         <Hero />
         <PricingPlans />
+        <CountdownHome />
       </main>
     </Wrapper>
   );
 }
 
 const Wrapper = styled.div`
-  margin: 0 24px;
-  background: linear-gradient(180deg, white 60%, #25293a 60%);
+  background-image: linear-gradient(180deg, #f2f2f2 60%, #25293a 60%);
+  padding-bottom: 100px;
+  main {
+    margin: 0 24px;
+  }
 `;
 
 export default Home;

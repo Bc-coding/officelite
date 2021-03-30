@@ -39,10 +39,10 @@ const Wrapper = styled.section`
 
   .headerPattern {
     position: absolute;
-    left: -42px;
-    top: -178px;
+    left: -65px;
+    top: -220px;
 
-    z-index: -1;
+    z-index: 1;
     width: 458px;
     height: 458px;
 
@@ -54,6 +54,7 @@ const Wrapper = styled.section`
   .logo-container {
     width: 155px;
     height: 30px;
+    z-index: 2;
 
     margin: 0 auto;
     margin-top: 46px;
@@ -68,6 +69,7 @@ const Wrapper = styled.section`
     height: 192px;
     margin: 0 auto;
     margin-top: calc(156px - 46px);
+    z-index: 2;
 
     img {
       width: 100%;

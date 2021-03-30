@@ -16,7 +16,7 @@ const PricingPlans = () => {
   );
 };
 
-const Wrapper = styled.section`
+const Wrapper = styled.article`
   margin-top: 100px;
 `;
 
