@@ -2,5 +2,6 @@ import Hero from "./Hero";
 import PricingPlans from "./PricingPlans";
 import Plan from "./Plan";
 import CountdownHome from "./CountdownHome";
+import Logo from "./Logo";
 
-export { Hero, PricingPlans, Plan, CountdownHome };
+export { Logo, Hero, PricingPlans, Plan, CountdownHome };

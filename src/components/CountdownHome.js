@@ -22,7 +22,6 @@ const Wrapper = styled.section`
 
   margin: 0 auto;
   margin-top: 100px;
-  border: 1px solid pink;
 
   .button1 {
     box-shadow: none;

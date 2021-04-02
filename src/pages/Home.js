@@ -2,11 +2,13 @@ import React from "react";
 import { Hero, PricingPlans, CountdownHome } from "../components";
 import styled from "styled-components";
 
+import footerPattern from "../assets/home/bg-pattern-footer.svg";
+
 function Home() {
   return (
     <Wrapper>
+      <Hero />
       <main>
-        <Hero />
         <PricingPlans />
         <CountdownHome />
       </main>
@@ -15,10 +17,23 @@ function Home() {
 }
 
 const Wrapper = styled.div`
-  background-image: linear-gradient(180deg, #f2f2f2 60%, #25293a 60%);
-  padding-bottom: 100px;
+  background: linear-gradient(180deg, #f2f2f2 55%, #25293a 55%);
+
   main {
-    margin: 0 24px;
+    background-image: url(${footerPattern});
+    background-size: 350%;
+    background-position: 50% 125%;
+    background-repeat: no-repeat;
+
+    padding: 0 24px;
+    padding-bottom: 100px;
+  }
+
+  @media screen and (min-width: 768px) {
+    main {
+      padding: 0 40px;
+      padding-bottom: 100px;
+    }
   }
 `;
 

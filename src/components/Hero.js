@@ -1,19 +1,13 @@
 import React from "react";
-import logo from "../assets/shared/logo.svg";
 import charts from "../assets/home/illustration-charts.svg";
-import headerPattern from "../assets/home/bg-pattern-header.svg";
-
 import styled from "styled-components";
 import "../index.css";
+import Logo from "./Logo";
+
 const Hero = () => {
   return (
     <Wrapper>
-      <div className="headerPattern">
-        <img src={headerPattern} alt="headerPattern" />
-      </div>
-      <div className="logo-container">
-        <img src={logo} alt="logo" />
-      </div>
+      <Logo />
       <div className="hero-container">
         <div className="charts-container">
           <img src={charts} alt="charts" />
@@ -35,35 +29,6 @@ const Hero = () => {
 };
 
 const Wrapper = styled.section`
-  position: relative;
-
-  .headerPattern {
-    position: absolute;
-    left: -65px;
-    top: -220px;
-
-    z-index: 1;
-    width: 458px;
-    height: 458px;
-
-    img {
-      width: 100%;
-    }
-  }
-
-  .logo-container {
-    width: 155px;
-    height: 30px;
-    z-index: 2;
-
-    margin: 0 auto;
-    margin-top: 46px;
-
-    img {
-      width: 100%;
-    }
-  }
-
   .charts-container {
     width: 171px;
     height: 192px;
@@ -95,6 +60,20 @@ const Wrapper = styled.section`
 
       margin-top: 24px;
       margin-bottom: 24px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    padding: 0 40px;
+    margin: 0 auto;
+    .hero-container {
+      display: grid;
+      grid-template-columns: 50% 40%;
+      grid-gap: 10%;
+    }
+    .charts-container {
+      order: 2;
+      width: 281px;
+      height: 314px;
     }
   }
 `;
